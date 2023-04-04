@@ -12,3 +12,5 @@ let y = 10;
 console.log(y);
 //Crea una otra variable `z` y asignale el valor de `h + y`.
 
+let z = h + y; 
+console.log(z);

@@ -71,13 +71,18 @@ const foodSchedule = [
   
 function foodReplacer() {
   for (let food of foodSchedule) {
-    const comida = food.name
-    const vegano = food.isVegan
-
-    console.log(`La comida ${comida} tiene ${vegano} años`)
+    const comida = food.name                      //Aqui declaro la variable comida, donde se guardara el nombre de cada comida del array
+    const vegano = food.isVegan                   //Aqui declaro la variable vegano para poder acceder al valor de isVegan y así poder usarlo en la condicion
+    if(vegano === false){                         //Aqui lo que hago es: Si vegano (variable donde guardo el valor de isVegan) es falso, pues ejecutas lo que hay abajo.
+   console.log(comida.replace('Salmon', 'Banana')) 
+    } 
+    } console.log(foodSchedule)
+  
    }
-  }
-foodReplacer()
+  
+foodReplacer() //No consigo pasar de este punto. Pese a haber logrado que en mi funcion pueda chequear si los valores de isVegan son ciertos o no, no me deja cambiar los nombres. 
+
+//Prueba que hice al principio del ejercicio para ver como podia acceder a las propiedades. 
 // function foodReplacer() {
 //   for (i=0; i<foodSchedule.length; i++) {
 //     let vegano = foodSchedule.isVegan
@@ -89,3 +94,76 @@ foodReplacer()
 //   }
 // }
 // foodReplacer()
+
+
+//Usa un bucle para crear 3 arrays de peliculas filtrados por categorias. Pelicula pequeña, 
+//menos de 100 minutos, pelicula mediana, mas de 100 minutos y menos de 200 y pelicula grande, 
+//mas de 200 minutos. Imprime cada array en por consola.
+
+const movies = [
+  { name: "Titan A.E.", durationInMinutes: 130 },
+  { name: "Nightmare before Christmas", durationInMinutes: 225 },
+  { name: "Inception", durationInMinutes: 165 },
+  { name: "The Lord of the Rings", durationInMinutes: 967 },
+  { name: "Star Wars: A New Hope", durationInMinutes: 214 },
+  { name: "Terminator", durationInMinutes: 140 },
+];
+// function sortByGenre() {
+//   const peliculaPequeña = []
+//   const peliculaMediana = []
+//   const peliculaGrande = []
+//   for (movie of movies) {
+//     let duracion = movies.durationInMinutes
+//     if (duracion < 100) {
+//       movie.shift() && movie.unshift(peliculaPequeña)
+//     } if (duracion > 100 && duracion < 200) {
+//       movie.shift() && movie.unshift(peliculaMediana)
+//     } if (duracion > 200) {
+//       movie.shift() && movie.unshift(peliculaGrande)
+//     }
+//   } console.log(peliculaPequeña)
+//   console.log(peliculaMediana)
+//   console.log(peliculaGrande)
+// }
+// sortByGenre()     //Llegados a este punto, no sé muy bien como proceder, pues el codigo no ejecuta nada más que una sucesión de [] vacios. Pruebo a mirar en internet como mover un objeto de un array a otro.
+
+// function sortByGenre() {
+//   const peliculaPequeña = []
+//   const peliculaMediana = []
+//   const peliculaGrande = []
+//   for (movie of movies) {
+//     let duracion = movies.durationInMinutes
+//     if (duracion < 100) {
+//       movie.shift() && movie.unshift(peliculaPequeña)
+//     } if (duracion > 100 && duracion < 200) {
+//       movie.shift() && movie.unshift(peliculaMediana)
+//     } if (duracion > 200) {
+//       movie.shift() && movie.unshift(peliculaGrande)
+//     }
+//   } console.log(peliculaPequeña)
+//   console.log(peliculaMediana)
+//   console.log(peliculaGrande)
+// }
+//sortByGenre()  
+function sortByGenre() {
+  const peliculaPequeña = []
+  const peliculaMediana = []
+  const peliculaGrande = []
+movies.forEach(function(movie, durationInMinutes) {
+  if (durationInMinutes < 100 ){
+    movies.splice(movie)
+    peliculaPequeña.push(movie)
+  } if (durationInMinutes > 100 && durationInMinutes < 200){
+    movies.splice(movie)
+    peliculaMediana.push(movie)
+  } if (durationInMinutes > 200){
+    movies.splice(movie)
+    peliculaGrande.push(movie)
+  }
+  console.log(peliculaPequeña)
+console.log(peliculaMediana)
+console.log(peliculaGrande)
+}); 
+
+}
+sortByGenre()  //Llegados a este punto, no puedo avanzar más. No sé como seguir. Al ejecutar la función solo consigue separarme una pelicula dentro de un array vacio, pero el resto no funcionan. 

@@ -56,7 +56,8 @@ function checkAgeTernario() {
 } 
 checkAgeTernario()
 
-// Usa un for para remplazar todas las comidas que no sean veganas con las frutas del array de frutas. Recuerda no usar frutas duplicadas. Finalmente, imprime el array resultante.
+// Usa un for para remplazar todas las comidas que no sean veganas con las frutas del array de frutas. 
+//Recuerda no usar frutas duplicadas. Finalmente, imprime el array resultante.
 const fruits = ["Strawberry", "Banana", "Orange", "Apple"];
 const foodSchedule = [
   { name: "Heura", isVegan: true },
@@ -67,11 +68,24 @@ const foodSchedule = [
   { name: "Pasta", isVegan: true },
 ];
 
-  function replacer(){
-    for (i=0; i<foodSchedule.length; i++)
-    nombre = foodSchedule[i]
-    if (foodSchedule.isVegan = true) {
-      console.log(`La siguiente comida es vegana: ${foodSchedule[i]}`) 
+  
+function foodReplacer() {
+  for (let food of foodSchedule) {
+    const comida = food.name
+    const vegano = food.isVegan
+
+    console.log(`La comida ${comida} tiene ${vegano} años`)
+   }
   }
-  }
-replacer(foodSchedule)
+foodReplacer()
+// function foodReplacer() {
+//   for (i=0; i<foodSchedule.length; i++) {
+//     let vegano = foodSchedule.isVegan
+//     if (vegano === true) {
+//       console.log('Esta comida es vegana')
+//       }else{
+//         console.log('Esta comida no es vegana')
+//       }
+//   }
+// }
+// foodReplacer()

@@ -300,7 +300,7 @@ for (let movie of movies) {
   }
  ]
  for (let user of arrayUsuariosYEdades){
-  const nombre = user[i]
+  const nombre = user.Nombre
   const edad = user.Edad
   console.log(`El usuario ${nombre} tiene ${edad} años`)
  }

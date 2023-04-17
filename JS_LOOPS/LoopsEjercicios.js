@@ -14,7 +14,7 @@ for (let product of products) {
 }
 buscadorCamiseta() //Aunque la función me funciona y cumple su funcion (valga la redundancia) me gustaría saber como mandar elementos de un array a otro array vacio. He intentado resolver el problema así pero no lo saco.
 
-//Versión 2 del ejercicio, usando ternario: 
+//Versión 2 del ejercicio, usando ternario// 
 function tshirtSearcher() {
     console.log('Lista de camisetas: ')
     for (let product of products){
@@ -90,7 +90,7 @@ checkAprobado() //Ejercicio superado, pero merece ser revisado porque no estoy s
 //una manera de expresar 'Si T1 && T2 && T3 son mayormente true', pero no sé como. He probado a escribir 'estudiante.T1 && estudiante.T2 && estudiante.T3 == true' pensando que
 //javascript lo leería como 'si almenos hay mayoria de true' pero no ha funcionado. 
 
-//Version 2
+//Version 2//
 
 function comprobarAprobado () {
     for (let i = 0; i < alumns.length; i++) {
@@ -109,7 +109,7 @@ for (paises of placesToTravel) {
     console.log(paises)
 }
 
-//Version 2, usando solo el for. 
+//Version 2, usando solo el for//
 for (i=0; i<placesToTravel.length; i++){
     console.log(placesToTravel[i])
 }
@@ -128,10 +128,13 @@ const alien = {
 for (key in alien){
     console.log(alien[key])
 }
+//Resuelto
 
-//Version 2
+//Version 2//
 
 for (key in alien){
     
     console.log(`El especimen ${alien.name} tiene los siguientes atributos... ${key} : ${alien[key]}`)
-}
+} 
+//Resuelto
+

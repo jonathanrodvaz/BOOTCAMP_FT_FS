@@ -167,3 +167,51 @@ console.log(peliculaGrande)
 
 }
 sortByGenre()  //Llegados a este punto, no puedo avanzar más. No sé como seguir. Al ejecutar la función solo consigue separarme una pelicula dentro de un array vacio, pero el resto no funcionan. 
+
+//Usa un bucle para sumar el total de las ventas (sellCount) de todos los productos.
+
+const products = [
+  { name: "Funko Dr. Strange", sellCount: 10 },
+  { name: "Mochila de protones: Ghostbusters", sellCount: 302 },
+  { name: "Sable laser FX", sellCount: 23 },
+  { name: "Varita de Voldemort", sellCount: 6 },
+];
+
+function productsSumAll () {
+  const acc = 0 
+  
+  for (let producto of products){
+    const precio = producto.sellCount
+    sellCountTotal = precio + acc
+      console.log(sellCountTotal)
+
+    }
+}
+productsSumAll() //Llegados a este punto, no se como avanzar. Consigo sacar los sellCount de cada item, pero no consigo sumarlos entre ellos. Lo maximo que he conseguido ha sido sumar cada item por si mismo (Ejemplo: item 1(10) + item 1(10) = 20)
+
+//Usa un bucle para recorrer el array de peliculas (products) y añade al array goodProducts 
+//los que tengan más de 20 ventas (sellCount) y al array badProducts los que tengan menos.
+
+const goodProducts = [];
+const badProducts = [];
+
+const products2 = [
+  { name: "Funko Dr. Strange", sellCount: 10 },
+  { name: "Mochila de protones: Ghostbusters", sellCount: 302 },
+  { name: "Sable laser FX", sellCount: 23 },
+  { name: "Varita de Voldemort", sellCount: 6 },
+];
+
+function bestSellers() {
+for (product in products2){ 
+  let price = product.sellCount
+  if (price < 20 ){
+    let badProducts = product.splice()
+  } else if (price > 20) {
+    let goodProducts = product.splice()
+  }
+  console.log(goodProducts)
+console.log(badProducts)
+}
+}
+bestSellers() // No sé como continuar con este ejercicio.

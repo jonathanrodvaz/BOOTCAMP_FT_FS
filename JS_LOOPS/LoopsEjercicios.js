@@ -138,3 +138,65 @@ for (key in alien){
 } 
 //Resuelto
 
+////**Iteración #5: Probando For**
+
+//Usa un bucle **for** para recorrer todos los destinos del array 
+//y elimina los elementos que tengan el id 11 y 40. Imprime en un ***console log*** el array. Puedes usar este array:
+
+const placesToTravel1 = [{id: 5, name: 'Japan'}, {id: 11, name: 'Venecia'}, {id: 23, name: 'Murcia'}, {id: 40, name: 'Santander'}, {id: 44, name: 'Filipinas'}, {id: 59, name: 'Madagascar'}]
+
+function editorPlaces() {
+    for (i=0; i<placesToTravel1.length; i++){
+        const place = placesToTravel1[i]
+        //if (place.id === 4 || place.id === 11 || place.id === 23 || place.id === 44 || place.id === 59) {
+        if (place.id !== 11 && place.id !== 40)  {   //Mejor expresado de esta manera, es mas breve y funciona. 
+        console.log(place)
+        }
+        
+    }
+}
+
+editorPlaces() //Ejercicio resuelto a medias... He conseguido que el console.log muestre todos los paises sin los id de 11 y 40, pero porque los he filtrado. No sé como eleminarlos del array original. 
+
+
+////**Iteración #6: Mixed For...of e includes**////
+//Usa un bucle **for...of** para recorrer todos los juguetes y elimina los que incluyan la palabra gato. 
+//Recuerda que puedes usar la función ***.includes()*** para comprobarlo.Puedes usar este array:
+
+const toys = [
+    {id: 5, name: 'Buzz MyYear'}, 
+    {id: 11, name: 'Action Woman'}, 
+    {id: 23, name: 'Barbie Man'}, 
+    {id: 40, name: 'El gato con Guantes'},
+    {id: 40, name: 'El gato felix'}
+    ]
+
+
+//////Ejercicio 8 de es6///////
+//     6.1 Dado el siguiente javascript filtra los videojuegos por gender = 'RPG' usando 
+// .filter() y usa .reduce() para conseguir la media de sus .score. 
+// La función .find() también podría ayudarte para el contrar el genero 'RPG' en el 
+// array .gender.
+
+const videogames = [
+    {name: 'Final Fantasy VII', genders: ['RPG'], score: 9.5},
+    {name: 'Assasins Creed Valhala', genders: ['Aventura', 'RPG'], score: 4.5},
+    {name: 'The last of Us 2', genders: ['Acción', 'Aventura'], score: 9.8},
+    {name: 'Super Mario Bros', genders: ['Plataforma'], score: 8.5},
+    {name: 'Genshin Impact', genders: ['RPG', 'Aventura'], score: 7.5},
+    {name: 'Legend of Zelda: Breath of the wild', genders: ['RPG', 'La cosa más puto bonita que he visto nunca'], score: 10},
+]
+
+function gameSearcher() {
+    for(i=0; i<videogames.length; i++){
+        const videogame = videogames[i]
+        for (genders in videogame){
+            //const genders = videogame.genders  // Este const sobra. 
+            if (videogame.genders.includes('RPG')) {
+                console.log(videogame.name)
+            } 
+        }
+    }
+}
+
+gameSearcher()

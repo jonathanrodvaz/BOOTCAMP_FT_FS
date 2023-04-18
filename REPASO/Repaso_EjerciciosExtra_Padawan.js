@@ -69,18 +69,18 @@ const foodSchedule = [
 ];
 
   
-function foodReplacer() {
-  for (let food of foodSchedule) {
+function foodReplacer(param1, param2) {
+  for (let food of param1) {
     const comida = food.name                      //Aqui declaro la variable comida, donde se guardara el nombre de cada comida del array
     const vegano = food.isVegan                   //Aqui declaro la variable vegano para poder acceder al valor de isVegan y así poder usarlo en la condicion
     if(vegano === false){                         //Aqui lo que hago es: Si vegano (variable donde guardo el valor de isVegan) es falso, pues ejecutas lo que hay abajo.
    console.log(comida.replace('Salmon', 'Banana')) 
     } 
-    } console.log(foodSchedule)
+    } console.log(param1)
   
    }
   
-foodReplacer() //No consigo pasar de este punto. Pese a haber logrado que en mi funcion pueda chequear si los valores de isVegan son ciertos o no, no me deja cambiar los nombres. 
+foodReplacer(foodSchedule) //No consigo pasar de este punto. Pese a haber logrado que en mi funcion pueda chequear si los valores de isVegan son ciertos o no, no me deja cambiar los nombres. 
 
 //Prueba que hice al principio del ejercicio para ver como podia acceder a las propiedades. 
 // function foodReplacer() {

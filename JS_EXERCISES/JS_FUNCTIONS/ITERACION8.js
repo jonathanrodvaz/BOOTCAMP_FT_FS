@@ -14,6 +14,29 @@ const counterWords = [
   'upgrade',
   'code'
 ];
-function repeatCounter(param) {
-  // insert code
+function contadorRepeat (array) {
+  let arrayVuelta = [];
+  let arrayNoRepetidos = [];
+  for (palabra of array){
+    if (!arrayNoRepetidos.includes(palabra)) {
+      arrayNoRepetidos.push(palabra)
+    }
+  }
+  arrayNoRepetidos.forEach((nombre, index) => {
+    let acc = 0;
+    for (i = 0; i < counterWords.length; i++) {
+      if( nombre == counterWords[i]) {
+        acc++
+      }
+    }
+    arrayVuelta.push({
+      trueName: nombre,
+      puesto: acc,
+    })
+  }) 
+  console.log(arrayVuelta)
 }
+
+let resultado = contadorRepeat(counterWords)
+console.log(resultado)
+

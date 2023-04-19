@@ -15,6 +15,7 @@ for (let product of products) {
 buscadorCamiseta() 
 
 //Versión 2 del ejercicio, usando ternario// 
+
 function tshirtSearcher() {
     console.log('Lista de camisetas: ')
     for (let product of products){

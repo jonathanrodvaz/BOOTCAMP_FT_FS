@@ -8,6 +8,7 @@ for (paises of placesToTravel) {
 }
 
 //Version 2, usando solo el for//
+
 for (i=0; i<placesToTravel.length; i++){
     console.log(placesToTravel[i])
 }

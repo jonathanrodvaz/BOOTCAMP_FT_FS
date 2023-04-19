@@ -11,7 +11,6 @@ const toys = [
     ]
 
 
-
 function toyFilter(param1) {
     const cajonJuguetes = []
     for (juguete of param1) {

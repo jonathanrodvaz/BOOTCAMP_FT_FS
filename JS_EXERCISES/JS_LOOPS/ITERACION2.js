@@ -1,44 +1,4 @@
 ////Iteración #2: Condicionales avanzados////
-//Comprueba en cada uno de los usuarios que tenga al menos dos trimestres aprobados y añade la propiedad isApproved 
-//a true o false en consecuencia. Una vez lo tengas compruébalo con un console.log. 
-//Para poder recorrer un array con objetos deberás, recorrerlo con un array y por cada posición añadir una nueva propiedad a cada objeto.
-// Pista: ( para añadir la propiedad dentro del objeto )
-//A la hora de recorrer un array y poder meter en el objeto una nueva propiedad
-//deberás asignar a ese array por indice una propiedad tal que así
-//nombreLista[indice].nombrePropiedad = valor;
-
-// objeto.isApproved =true
-
-
-// //donde objeto es el objeto que recorremos (cada alumno en nuestro caso)
-
-// //isApproved --- es la propiedad queremos definir o modificar 
-
-// // true ---- es el valor que le asignamos a la propiedad 
-
-
-// /////---------Ejemplo-----------
-
-// colegios = [
-//     {name: 'Pilarica', Clase1: 100, Clase1: 80, Clase1: 10}, 
-// 		{name: 'Lorica', Clase1: 89, Clase1: 50, Clase1: 40},	
-// ]
-
-// /* recorremos el array de objetos con un forEach para quedarnos en cada uno
-// de los elementos*/
-
-// colegios.forEach((colegios)=>{
-// 	//le añadimos la propiedad nueva llamada "pintada" y el valor = true
-// 	colegios.pintada = true;
-// })
-
-// console.log(colegios);
-
-// // -------- CONSOLE--------------
-
-// { name: 'Pilarica', Clase1: 10, pintada: true },
-// { name: 'Lorica', Clase1: 40, pintada: true }
-
 
 
 const alumns = [

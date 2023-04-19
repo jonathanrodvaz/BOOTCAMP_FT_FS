@@ -11,7 +11,6 @@ for (key in alien){
     console.log(alien[key])
 }
 
-
 //Version 2//
 
 for (key in alien){

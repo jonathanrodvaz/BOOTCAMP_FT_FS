@@ -9,3 +9,40 @@ const movies = [
 {title: 'Solo en Whatsapp', duration: 223, categories: ['comedia', 'thriller']},
 {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
 ]
+const generoComedia = []
+const generoAventura = []
+const generoAccion = []
+const generoAnimacion = []
+const generoThriller = []
+
+
+ function movieSearcher(param) {
+     for(i=0; i<param.length; i++){
+         const pelicula = param[i]
+         
+         for (genero in pelicula){
+            const genre = pelicula.categories
+             
+             if (genre.includes('comedia')) {
+                 generoComedia.push(pelicula)
+             } if (genre.includes('aventura')){
+                generoAventura.push(pelicula)
+                } if (genre.includes('acción')){
+                    generoAccion.push(pelicula)
+                } if (genre.includes('animación')){
+                    generoAnimacion.push(pelicula)
+                } if (genre.includes('thriller')) {
+                    generoThriller.push(pelicula)
+                }
+         }
+         console.log('Comedia: ', generoComedia);
+         console.log('Aventura: ', generoAventura);
+         console.log('Accion: ', generoAccion);
+         console.log('Animacion: ', generoAnimacion);
+         console.log('Thriller: ', generoThriller);
+     }
+ }
+
+ movieSearcher(movies)
+
+ 

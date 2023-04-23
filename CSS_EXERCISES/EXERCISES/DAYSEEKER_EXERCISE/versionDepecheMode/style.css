@@ -80,13 +80,13 @@
   
   /*Hero*/
   .hero {
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
   }
   
   .hero img {
     height: 60%;
-    width: 90%;
+    width: 100%;
     object-fit: cover;
 
   }
@@ -100,35 +100,41 @@
     }
   }
   
-  /*Featured Items*/
-  .featured-items {
+  /*Favorite albums*/
+  .favorite-albums {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: space-between;
+    padding: 3rem;
   }
   
-  .featured-items ul {
+  .favorite-albums ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    width: 50%;
+    width: 40%;
     list-style-type: none;
     text-align: center;
   }
   
-  .featured-items img {
-    width: 100%;
+  .favorite-albums img {
+    width: 80%;
+    padding: 0.5rem;
+    transition: transform .2s;
+  }
+
+  .favorite-albums img:hover{
+    transform: scale(1.05)
   }
   
-  .featured-items ul p {
-    margin-top: 1rem;
+  .favorite-albums ul p {
+    margin-top: 0.5rem;
   }
   
   /*Videoclip*/
   .videoclip {
     height: 70vh;
-    overflow: hidden;
+    overflow:inherit;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +144,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     gap: 1rem;
     text-align: center;
   }
@@ -150,6 +156,14 @@
     text-transform: uppercase;
     padding: 0.5rem 0.8rem;
     border: 2px solid var(--primary-color);
+  }
+  
+  /*Song List*/
+
+  .songlist {
+    width: 50%;
+    list-style-type: none;
+    text-align:right;
   }
   
   /*Footer*/
@@ -187,13 +201,13 @@
   
   .footer input {
     display: flex;
-    flex-direction:column-reverse;
-    width: 25%;
-    text-align:center;
+    flex-direction:row-reverse;
+    width: 33%;
+    text-align:right;
     background-color:inherit;
     font-family: var(--typography-p);
-    padding: 0.4rem;  /*Aqui he modificado el tamaño de la caja input para el email*/
-    margin-left:30.5rem; /*Con esta propiedad he podido mover la caja de un lado a otro*/
+    padding: 0.3rem;  /*Aqui he modificado el tamaño de la caja input para el email*/
+    margin-left:14.8rem; /*Con esta propiedad he podido mover la caja de un lado a otro*/
   } 
   
   

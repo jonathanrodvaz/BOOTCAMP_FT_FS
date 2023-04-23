@@ -1,0 +1,229 @@
+/*Palette*/
+:root {
+    --background-color: #130e0edd;
+    --background-color2: #581d00f4;
+    --background-color3: #031840b8;
+    --primary-color: #ffffff;
+    --secondary-color: #bebebe;
+    --typography-h1: 30px;
+    --typography-h2: 32px;
+    --typography-h3-a: 14px;
+    --typography-p: 13.6x;
+    --typography-tour: #786915bc;
+    --typography-tour2: #c5a90abc; 
+  }
+  
+  /*Reset*/
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Castoro Titling';
+   
+  }
+  
+  /*Global Styles*/
+  body{
+    background-color: black;
+    color:var(--primary-color);
+    font-size: var(--typography-p);
+    letter-spacing: 1.5px;
+  }
+  
+  
+  
+  /*Header*/
+  header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  header ul {
+    display: flex;
+    gap: 5rem;
+    list-style-type: none;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header a::after {
+    content: "";
+    background-color: var(--primary-color);
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  header a:hover::after {
+    width: 100%;
+  }
+  
+ .nightdead {
+    background-color: var(--background-color);
+    
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-around;
+        padding: 4rem;
+      
+ }
+.nightdead video{
+    
+    background-color: inherit;
+        height: 45vh;
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      
+}
+.nightdead h2 {
+
+    display: flex;
+        flex-direction:column-reverse;
+        align-items:flex-end;
+        justify-content:flex-end;
+        padding: 1rem;
+      
+}
+.nightdead p {
+    
+
+        display: flex;
+            flex-direction:column-reverse;
+            align-items:flex-end;
+            justify-content:flex-end;
+            font-size: var(--typography-p);
+        
+            font-family: 'Montserrat', sans-serif;
+            
+          
+    
+}
+.nightdead h3 {
+    
+
+    display: flex;
+        flex-direction:column-reverse;
+        align-items:flex-end;
+        justify-content:flex-end;
+        font-size:medium;
+        font-family: 'Castoro Titling';
+        
+      
+
+}
+ .dawndead {
+    background-color: var(--background-color2);
+   
+        display: flex;
+        flex-direction: column;
+        align-items:end;
+        justify-content: space-around;
+        padding: 4rem;
+      
+ }
+ .dawndead video{
+    background-color: inherit;
+    height: 45vh;
+        overflow:hidden;
+        display: grid;
+        justify-content:flex-end;
+        align-items:end;
+ }
+ .dawndead h2 {
+
+    display: flex;
+        flex-direction:column-reverse;
+        align-items:start;
+        justify-content:flex-start;
+        padding: 1rem;
+      
+}
+.dawdead p {
+    
+
+    display: flex;
+        flex-direction:column-reverse;
+        align-items:flex-end;
+        justify-content:flex-end;
+        font-size: var(--typography-p);
+    
+        font-family: 'Montserrat', sans-serif;
+        
+      
+
+}
+.dawndead h3 {
+    
+
+    display: flex;
+        flex-direction:column-reverse;
+        align-items:flex-end;
+        justify-content:flex-end;
+        font-size:medium;
+        font-family: 'Castoro Titling';
+        
+      
+
+}
+ .daydead {
+    background-color: var(--background-color3);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+    padding: 4rem;
+ }
+ .daydead video{
+    background-color: inherit;
+    height: 45vh;
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+ }
+ .daydead h2 {
+
+    display: flex;
+        flex-direction:column-reverse;
+        align-items:flex-end;
+        justify-content:flex-end;
+        padding: 1rem;
+      
+}
+.daydead p {
+    
+
+    display: flex;
+        flex-direction:column-reverse;
+        align-items:flex-end;
+        justify-content:flex-end;
+        font-size: var(--typography-p);
+    
+        font-family: 'Montserrat', sans-serif;
+        
+      
+
+}
+.daydead h3 {
+    
+
+    display: flex;
+        flex-direction:column-reverse;
+        align-items:flex-end;
+        justify-content:flex-end;
+        font-size:medium;
+        font-family: 'Castoro Titling';
+        
+      
+
+}

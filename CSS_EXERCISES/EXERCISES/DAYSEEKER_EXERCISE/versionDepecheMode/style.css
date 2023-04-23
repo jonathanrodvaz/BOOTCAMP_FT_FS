@@ -174,11 +174,11 @@
     align-items: center;
     justify-content: space-around;
     padding: 2rem;
-    background-image: url('assets/images/unsplash-image.jpg');
-    height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: repeat; /* Do not repeat the image */
-    background-size: contain; /* Resize the background image to cover the entire container */
+
+    height: 500px;
+    background-position: center; 
+    background-repeat: repeat; 
+    background-size: contain; 
   }
   
   
@@ -190,14 +190,7 @@
     text-align:right;
   }
   
-  .footer h3 {
-    display: grid;
-    flex-direction:column;
-    align-items:start;
-    justify-content:left;
-    padding: 0.5%;
-  
-  }
+
   
   .footer input {
     display: flex;
@@ -206,11 +199,8 @@
     text-align:right;
     background-color:inherit;
     font-family: var(--typography-p);
-    padding: 0.3rem;  /*Aqui he modificado el tamaño de la caja input para el email*/
-    margin-left:14.8rem; /*Con esta propiedad he podido mover la caja de un lado a otro*/
+    padding: 0.3rem;  
+    margin-left:14.8rem; 
   } 
   
   
-  .footer p {
-    margin-top: 2.5%;
-  }

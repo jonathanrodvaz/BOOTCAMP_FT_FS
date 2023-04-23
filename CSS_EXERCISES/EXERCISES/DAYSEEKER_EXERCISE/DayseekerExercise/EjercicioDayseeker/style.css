@@ -234,6 +234,7 @@ header a:hover::after {
   text-align:center;
   background-color:inherit;
   font-family: var(--typography-p);
+  color: var(--typography-tour);
   padding: 0.4rem;  
   margin-left:30.5rem; 
 } 

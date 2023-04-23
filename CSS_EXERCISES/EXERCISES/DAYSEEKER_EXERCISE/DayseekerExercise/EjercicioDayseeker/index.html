@@ -13,16 +13,19 @@
     <nav>
       <ul>
         <li>
-          <a href="#null">Tour</a>
+          <a href="#tourdates">Tour</a>
         </li>
         <li>
-          <a href="#null">Videos</a>
+          <a href="#videoclip">Videos</a>
         </li>
         <li>
-          <a href="#null">Shop All</a>
+          <a href="#shop">Shop All</a>
         </li>
         <li>
           <a href="null">About</a>
+        </li>
+        <li>
+          <a href="#subscribe">Subscribe</a>
         </li>
       </ul>
     </nav>
@@ -31,7 +34,7 @@
     <section class="hero">
       <img src="./assets/images/banner.jpg" alt="Dark Sun's album cover: a psychodelic picture of a black sun"/> 
     </section>
-    <section class="featured-items">
+    <section id="shop" class="featured-items">
       <h2>Featured Items</h2>
       <ul>
         <li>
@@ -66,7 +69,7 @@
         </li>
       </ul>
     </section>
-    <section class="videoclip" />
+    <section id="videoclip" class="videoclip" />
     <div>
       <h2>Crying while your dancing</h2>
       <button>Watch</button>
@@ -75,7 +78,22 @@
       <source src="./assets/videos/crying.mp4" type="video/mp4" />
     </video>
   </section>
-  <section class="footer" />
+  <section id="tourdates" class="tour">
+<div>
+ 
+  <h3>Tour Dates</h3>
+    <form action="#">
+    <label for="date"></label>
+    <select name="date" id="tour">
+      <option value="April23">April '23</option>
+      <option value="May23">May '23</option>
+      <option value="June23">June '23</option>
+     </select>
+    <input type="submit" value="Select" />
+</form>
+</div>
+  </section>
+  <section id="subscribe" class="footer" />
   <div>
     <h3>Search</h3>
     <h2>Sign up and save</h2>

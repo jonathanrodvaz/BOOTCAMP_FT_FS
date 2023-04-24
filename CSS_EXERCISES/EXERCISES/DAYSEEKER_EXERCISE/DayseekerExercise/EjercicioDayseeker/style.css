@@ -49,14 +49,17 @@ p{
 
 /*Header*/
 header {
-  height: 14vh;
+  min-height: 14vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
 }
 
 header ul {
   display: flex;
+  justify-content:center;
+  align-items: center;
   gap: 1rem;
   list-style-type: none;
 }

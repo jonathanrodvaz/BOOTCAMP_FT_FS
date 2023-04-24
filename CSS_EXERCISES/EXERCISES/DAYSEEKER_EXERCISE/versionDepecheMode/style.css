@@ -1,206 +1,204 @@
 /*Palette*/
 :root {
-    --background-color: #080432;
-    --primary-color: #3e3b4a;
-    --secondary-color: #2b0862;
-    --typography-h1: 40px;
-    --typography-h2: 32px;
-    --typography-h3-a: 14px;
-    --typography-p: 13.6x;
-  }
-  
-  /*Reset*/
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nanum Gothic Coding', monospace, sans-serif;
-  }
-  
-  /*Global Styles*/
-  body{
-    background-color: var(--background-color);
-    color:var(--primary-color);
-    font-size: var(--typography-p);
-    letter-spacing: 1.5px;
-  }
-  
-  h1 {
-    font-size: var(--typograpy-h1);
-    text-transform: uppercase;
-  }
-  
-  h2 {
-    font-size: var(--typography-h2);
-    text-transform: uppercase;
-  }
-  
-  h3,
-  a{
-    font-size: var(--typography-h3-a);
-    text-transform: uppercase;
-  }
-  
-  p{
-    color: var(--secondary-color);
-  }
-  
-  /*Header*/
-  header {
-    height: 14vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  header ul {
-    display: flex;
-    gap: 1rem;
-    list-style-type: none;
-  }
-  
-  header a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  header a::after {
-    content: "";
-    background-color: var(--primary-color);
-    width: 0;
-    height: 2px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  header a:hover::after {
-    width: 100%;
-  }
-  
-  /*Hero*/
-  .hero {
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .hero img {
-    height: 60%;
-    width: 100%;
-    object-fit: cover;
+  --background-color: #080432;
+  --primary-color: #3e3b4a;
+  --secondary-color: #2b0862;
+  --typography-h1: 40px;
+  --typography-h2: 32px;
+  --typography-h3-a: 14px;
+  --typography-p: 13.6x;
+}
 
-  }
-  
-  @keyframes banner {
-    0%{
-      transform: scale(2);
-    }
-    100%{
-      transform: scale(1);
-    }
-  }
-  
-  /*Favorite albums*/
-  .favorite-albums {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem;
-  }
-  
-  .favorite-albums ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    width: 40%;
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  .favorite-albums img {
-    width: 80%;
-    padding: 0.5rem;
-    transition: transform .2s;
-  }
+/*Reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nanum Gothic Coding', monospace, sans-serif;
+}
 
-  .favorite-albums img:hover{
-    transform: scale(1.05)
-  }
-  
-  .favorite-albums ul p {
-    margin-top: 0.5rem;
-  }
-  
-  /*Videoclip*/
-  .videoclip {
-    height: 70vh;
-    overflow:inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .videoclip div {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    gap: 1rem;
-    text-align: center;
-  }
-  
-  .videoclip button {
-    background-color: transparent;
-    color: var(--primary-color);
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 0.5rem 0.8rem;
-    border: 2px solid var(--primary-color);
-  }
-  
-  /*Song List*/
+/*Global Styles*/
+body{
+  background-color: var(--background-color);
+  color:var(--primary-color);
+  font-size: var(--typography-p);
+  letter-spacing: 1.5px;
+}
 
-  .songlist {
-    width: 50%;
-    list-style-type: none;
-    text-align:right;
-  }
-  
-  /*Footer*/
-  
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2rem;
+h1 {
+  font-size: var(--typograpy-h1);
+  text-transform: uppercase;
+}
 
-    height: 500px;
-    background-position: center; 
-    background-repeat: repeat; 
-    background-size: contain; 
-  }
-  
-  
-  .footer h2 {
-    display: grid;
-    flex-direction:row-reverse;
-    width: 100%;
-    list-style-type: none;
-    text-align:right;
-  }
-  
+h2 {
+  font-size: var(--typography-h2);
+  text-transform: uppercase;
+}
 
-  
-  .footer input {
-    display: flex;
-    flex-direction:row-reverse;
-    width: 33%;
-    text-align:right;
-    background-color:inherit;
-    font-family: var(--typography-p);
-    padding: 0.3rem;  
-    margin-left:14.8rem; 
-  } 
-  
-  
+h3,
+a{
+  font-size: var(--typography-h3-a);
+  text-transform: uppercase;
+}
+
+p{
+  color: var(--secondary-color);
+}
+
+/*Header*/
+header {
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+header a::after {
+  content: "";
+  background-color: var(--primary-color);
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+header a:hover::after {
+  width: 100%;
+}
+
+/*Hero*/
+.hero {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+@keyframes banner {
+  0%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+/*Favorite albums*/
+.favorite-albums {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.favorite-albums ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 40%;
+  list-style-type: none;
+  text-align: center;
+}
+
+.favorite-albums img {
+  width: 80%;
+  padding: 0.5rem;
+  transition: transform .2s;
+}
+
+.favorite-albums img:hover{
+  transform: scale(1.05)
+}
+
+.favorite-albums ul p {
+  margin-top: 0.5rem;
+}
+
+/*Videoclip*/
+.videoclip {
+  height: 70vh;
+  overflow:inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videoclip div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.videoclip button {
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem 0.8rem;
+  border: 2px solid var(--primary-color);
+}
+
+/*Song List*/
+
+.songlist {
+  width: 50%;
+  list-style-type: none;
+  text-align:right;
+}
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+
+  height: 500px;
+  background-position: center; 
+  background-repeat: repeat; 
+  background-size: contain; 
+}
+
+
+.footer h2 {
+  display: grid;
+  flex-direction:row-reverse;
+  width: 100%;
+  list-style-type: none;
+  text-align:right;
+}
+
+
+
+.footer input {
+  display: flex;
+  flex-direction:row-reverse;
+  width: 33%;
+  text-align:right;
+  background-color:inherit;
+  font-family: var(--typography-p);
+  padding: 0.3rem;  
+  margin-left:14.8rem; 
+} 

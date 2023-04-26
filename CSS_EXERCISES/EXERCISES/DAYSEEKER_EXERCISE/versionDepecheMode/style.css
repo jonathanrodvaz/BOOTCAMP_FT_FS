@@ -119,9 +119,9 @@ header a {
 /*Videoclip*/
 .videoclip {
   min-height: 60vh;
-  overflow:inherit;
+  overflow:hidden;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
 }
 .videoclip div {
@@ -142,10 +142,18 @@ header a {
   padding: 0.5rem 0.8rem;
   border: 2px solid var(--primary-color);
 }
+.videoclip video{
+  min-height: 70vh;
+  overflow:hidden;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
 
 /*Song List*/
 
 .songlist {
+  min-height: 70%;
   width: 50%;
   list-style-type: none;
   text-align:right;

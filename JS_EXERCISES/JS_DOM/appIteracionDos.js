@@ -2,12 +2,13 @@
 const nuevoDiv = document.createElement("div")
 console.log(nuevoDiv)
 //2.2 Inserta dinamicamente en un html un div que contenga una p con javascript.
-const newDiv = document.createElement("div")
-document.body.appendChild(newDiv)
-const newP = document.createElement("p")
-document.body.appendChild(newP)
-newDiv.appendChild(newP)
-console.log(newDiv)
+const template = `
+<div>
+    <p>
+</div>
+`
+document.body.innerHTML = template;
+
 //2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.
 
 //2.4 Inserta dinamicamente con javascript en un html una p con el texto 'Soy dinámico!'.

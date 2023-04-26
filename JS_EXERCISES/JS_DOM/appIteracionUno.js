@@ -20,14 +20,9 @@ console.log(todoPokemon)
 const showTest = document.querySelectorAll('[data-function="testMe"]');
 console.log(showTest)
 
-/*var data = "data-function=";
-const showTest = document.querySelectorAll(data + "testMe")
-console.log(showTest)*/  //Este metodo no funciona. 
-
 
 //1.6 Usa querySelector para mostrar por consola el 3 personaje con el atributo
 //data-function="testMe".
-
 
 
 console.log(showTest[2])  

@@ -41,11 +41,20 @@ const listaApps = () => {
     }
 }
 
-
-
 //2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
+var nodo = document.getElementById(".fn-remove-me");
+nodo.parentNode.removeChild(nodo);
 
 //2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div.
 //	Recuerda que no solo puedes insertar elementos con .appendChild.
 
+const newStatement = document.createElement('p')
+newStatement.innerText = 'Voy en medio!'
+document.body.appendchild(newStatement)
+
 //2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
+
+const adentro = () => {
+    const voyAdentro = document.querySelectorAll("#.fn-insert-here");
+    voyAdentro.innerHTML = `Voy dentro!`
+}
